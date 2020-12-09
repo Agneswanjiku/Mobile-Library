@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="findBooksButton" type="id" />
+    <item name="action_logout" type="id" />
+    <item name="historyTextView" type="id" />
+    <item name="type" type="id" />
+    <item name="bookmageView" type="id" />
+    <item name="bookImageView" type="id" />
+    <item name="searchText" type="id" />
+</resources>

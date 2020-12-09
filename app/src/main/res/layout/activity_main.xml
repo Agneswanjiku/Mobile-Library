@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib"
+    tools:context=".MainActivity">
+
+
+
+    <!--        android:id="@+id/layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <ImageView-->
+    <!--            android:background="@color/white"-->
+    <!--            android:id="@+id/blink"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:visibility="visible"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            android:src="@drawable/books"/>-->
+    <!--    </LinearLayout>-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button1"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/layout"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:text="Click Me!" />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:src="@drawable/herof"-->
+    <!--        android:scaleType="centerCrop" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/appNameTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:text="MyHeros"-->
+    <!--        android:textSize="60sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/colorTextIcons" />-->
+    <Button
+        android:id="@+id/booksButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/savedBookButton"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Find Book"
+        android:textColor="@color/design_default_color_secondary"
+        android:background="@color/purple_200"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Saved book"
+        android:id="@+id/savedBookButton"
+        android:background="@color/colorAccent"
+        android:textColor="@color/design_default_color_secondary"
+        android:visibility="visible"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <!--    <Button-->
+    <!--        android:id="@+id/searchBtn"-->
+    <!--        android:layout_width="293dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginLeft="8dp"-->
+    <!--        android:text="search" />-->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "607176808031",
+    "project_id": "mobile-library-b7cb2",
+    "storage_bucket": "mobile-library-b7cb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607176808031:android:f8bef6954fe14e182fedea",
+        "android_client_info": {
+          "package_name": "com.moringaschool.mobilelibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607176808031-0nmftr5vc15venclvmah09rg2v7n6u0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringaschool.mobilelibrary",
+            "certificate_hash": "5d95d119d6f864276c94686280d689b398c06987"
+          }
+        },
+        {
+          "client_id": "607176808031-00bsr1q95u8g445b2t43dhf9dhenc54a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpPShArYAgP40_3NfFPTkc2StW3NfoCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607176808031-00bsr1q95u8g445b2t43dhf9dhenc54a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

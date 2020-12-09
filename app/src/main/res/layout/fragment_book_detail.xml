@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/batman2ImageView"
+            android:src="@drawable/books"
+            android:scaleType="centerCrop" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookNameTextView"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Book name"
+                android:textColor="#15981B"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="occupation: "
+                android:id="@+id/placeOfBirthTextView"
+                android:layout_below="@+id/bookNameTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#24912C"
+                android:textSize="20dp"
+                android:text="histroy: "
+                android:id="@+id/contentTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#24912C"
+                android:textSize="20dp"
+                android:id="@+id/title"
+                android:text="title: "
+                android:layout_below="@+id/contentTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="italic"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#090707"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/savedBookButton"
+                android:paddingTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="aliases: "
+                    android:textSize="20dp"
+                    android:id="@+id/bookTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="italic"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:id="@+id/book"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:text="relatives: "-->
+<!--                    android:layout_below="@+id/bookTextView"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:textStyle="italic"/>-->
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:text="Add To Favorite"
+                android:id="@+id/savedBookButton"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/design_default_color_secondary"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
