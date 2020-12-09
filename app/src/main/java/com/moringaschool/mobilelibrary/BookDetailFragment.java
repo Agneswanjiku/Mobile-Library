@@ -17,10 +17,13 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.moringaschool.mobilelibrary.model.Item;
 import com.moringaschool.mobilelibrary.model.VolumeInfo;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -42,7 +45,7 @@ public class BookDetailFragment extends Fragment implements  View.OnClickListene
     @BindView(R.id.savedBookButton)
     Button mSavedBook;
 
-    private VolumeInfo bookItems;
+    private List<Item> bookItems;
 
 
     public BookDetailFragment() {
@@ -50,7 +53,7 @@ public class BookDetailFragment extends Fragment implements  View.OnClickListene
     }
 
 
-    public static BookDetailFragment newInstance(VolumeInfo volumeInfo) {
+    public static BookDetailFragment newInstance(Item volumeInfo) {
         BookDetailFragment fragment = new BookDetailFragment();
         Bundle args = new Bundle();
         args.putParcelable("volumeinfo", Parcels.wrap(volumeInfo));
@@ -74,14 +77,14 @@ public class BookDetailFragment extends Fragment implements  View.OnClickListene
 
         ButterKnife.bind(this, heroDetails);
 
-        Picasso.get().load(bookItems.getCategories().get(1)).into(imageView);
+//        Picasso.get().load(bookItems.getCategories().get(1)).into(imageView);
 
 
-        mType.setText(("Speed: ")+ bookItems.getAuthors().listIterator());
+        mType.setText(("Speed: ")+ bookItems.get(0).getVolumeInfo().getAuthors().listIterator());
 //        mRelatives.setText(("Relatives: ")+ bookItems.g.getRelatives());
-        mBook.setText(("Book : ")+ bookItems.getDescription());
-        mHistory.setText(("Occupation: ")+bookItems.getPublisher());
-        bookName.setText(("Book Name: ")+bookItems.getLanguage());
+        mBook.setText(("Book : ")+ bookItems.get(0).getVolumeInfo().getDescription());
+        mHistory.setText(("Occupation: ")+bookItems.get(0).getVolumeInfo().getPublisher());
+        bookName.setText(("Book Name: ")+bookItems.get(0).getVolumeInfo().getTitle());
 //        placeOfBirth.setText(("Place of Birth: ")+ bookItems.getBiography().getPlaceOfBirth());
 
         mSavedBook.setOnClickListener(this);

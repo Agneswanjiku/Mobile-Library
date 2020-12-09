@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
     @BindView(R.id.booksButton )Button mFindBooksButton;
     @BindView(R.id.savedBookButton) Button mSavedBooksButton;
+    @BindView(R.id.bookEditText) EditText mbookEditText;
     //    private View mSavedBook;
     //    @BindView(R.id.appNameTextView) TextView appName;
 //    @BindView(R.id.button1) Button mButton;
@@ -67,7 +68,9 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     @Override
     public void onClick(View view) {
         if(view == mFindBooksButton ){
+            String book = mbookEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, BookListActivity.class);
+            intent.putExtra("book", book);
             startActivity(intent);
         }
 //        if(view == mSavedBook){

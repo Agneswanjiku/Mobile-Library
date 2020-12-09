@@ -7,11 +7,13 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.moringaschool.mobilelibrary.adapters.BookPagerAdapter;
+import com.moringaschool.mobilelibrary.model.Item;
 import com.moringaschool.mobilelibrary.model.VolumeInfo;
 
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,7 +23,7 @@ public class BookDetailActivity extends AppCompatActivity {
     ViewPager mPager;
     BookPagerAdapter mAdapter;
 
-    ArrayList<VolumeInfo> books;
+    List<Item> books;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

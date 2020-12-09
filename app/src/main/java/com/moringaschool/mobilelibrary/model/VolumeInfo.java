@@ -2,7 +2,6 @@ package com.moringaschool.mobilelibrary.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.moringaschool.mobilelibrary.adapters.BookListAdapter;
 
 import org.parceler.Parcel;
 

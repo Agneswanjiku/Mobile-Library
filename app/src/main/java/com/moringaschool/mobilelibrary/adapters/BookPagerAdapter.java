@@ -8,17 +8,19 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.moringaschool.mobilelibrary.BookDetailFragment;
+import com.moringaschool.mobilelibrary.model.Item;
 import com.moringaschool.mobilelibrary.model.VolumeInfo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BookPagerAdapter extends FragmentPagerAdapter {
 
     private static final String TAG = " ";
-    private ArrayList<VolumeInfo> bookResults;
+    private List<Item> bookResults;
 
 
-    public BookPagerAdapter(FragmentManager fm, int behavior, ArrayList<VolumeInfo> books){
+    public BookPagerAdapter(FragmentManager fm, int behavior, List<Item> books){
         super(fm, behavior);
         bookResults = books;
     }
@@ -38,7 +40,7 @@ public class BookPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return bookResults.get(position).getPublisher();
+        return bookResults.get(position).getVolumeInfo().getPublisher();
     }
 }
 
